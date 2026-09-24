@@ -1,7 +1,7 @@
 # Firefox 便携版构建
 #
-# 实际流程全部在 Browser-builder 的可复用工作流里，这里只负责触发条件和参数。
-# 需要调整构建逻辑时，请改 https://github.com/Piracola/Browser-builder
+# 实际流程全部在 Gecko-Portable 的可复用工作流里，这里只负责触发条件和参数。
+# 需要调整构建逻辑时，请改 https://github.com/Piracola/Gecko-Portable
 name: Firefox Portable Build
 
 on:
@@ -21,7 +21,7 @@ jobs:
     permissions:
       contents: write
       actions: write
-    uses: Piracola/Browser-builder/.github/workflows/build-portable.yml@main
+    uses: Piracola/Gecko-Portable/.github/workflows/build-portable.yml@main
     with:
       browser: firefox
       # 想发布中文版 Firefox，把这里改成 zh-CN 即可。
